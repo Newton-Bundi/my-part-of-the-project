@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.bot-army {
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+}
+
+.ui.grid > .row.bot-army-row {
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+
+.ui.grid {
+  padding: 0px 20px;
+}
+
+.bot {
+  background-color: #e2e8ec; 
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px;
+  width: 350px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.bot p {
+  font-size: 10px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.bot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bot img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.bot h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.bot small {
+  color: black;
+}
+
+.header {
+  color: black;
+}
+
+.bot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bot button {
+  padding: 10px 20px; /* Increase padding */
+  background-color: #e74c3c; /* Button background color */
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1.2rem; /* Increase font size */
+  transition: background-color 0.3s ease;
+}
+
+.bot button:hover {
+  background-color: #c0392b; /* Hovered button color */
+}

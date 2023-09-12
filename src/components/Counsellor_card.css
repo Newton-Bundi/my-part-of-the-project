@@ -1,0 +1,46 @@
+.counsellor-card {
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  .counsellor-card-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .like-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .like-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .right-section {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .counsellor-card-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
