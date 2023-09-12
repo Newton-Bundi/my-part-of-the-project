@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
 import './Signup.css';
 
-const SignUpForm = () => {
+function SignUpForm () {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-    imageUrl:'',
-    bio:'',
-  });
+    imageUrl:"",
+    email: "",
+    password: "",
+    username: "",
+    bio:"",
+});
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  function handleChange(f) {
+    const { name, value } = f.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+function handleSubmit (e){
     e.preventDefault();
     console.log(formData);
     // Send formData to the server and save it in the database (db.json in this case)
 
-    /*
+
     fetch('http://localhost:8002/cards', {
       method: 'POST',
-      body: JSON.stringify(formData),
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Data saved to the database:', data);
+        console.log(data);
       })
       .catch((error) => {
         console.error('Error:', error);
       })
       
-      */
+
       ;
   };
 
@@ -81,6 +81,7 @@ const SignUpForm = () => {
           <label htmlFor="Bio">Bio:</label>
           <textarea
             id="bio"
+            type ="text"
             name="bio"
             value={formData.bio}
             onChange={handleChange}

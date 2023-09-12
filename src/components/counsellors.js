@@ -24,8 +24,8 @@ function Counsellor () {
           <Card
             key={index}
             imageUrl={card.imageUrl}
-            name={card.name}
-            text={card.text}
+            name={card.username}
+            bio={card.bio}
           />
         ))}
       </div>

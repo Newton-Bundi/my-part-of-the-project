@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Counsellor_card.css';
 
-function Card ({ imageUrl, text, name }) {
+function Card ({ imageUrl, bio, name }) {
     const [likes, setLikes] = useState(0);
   
     function handleLikeClick() {
@@ -18,7 +18,7 @@ function Card ({ imageUrl, text, name }) {
         </div>
         <div className="right-section">
           <h1 className="card-name">{name}</h1>
-          <p className="counsellor-card-text">{text}</p>
+          <p className="counsellor-card-text">{bio}</p>
         </div>
       </div>
     );
